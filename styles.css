@@ -1,0 +1,122 @@
+/* version movil*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    height: 550px;
+    margin-bottom: 3px;
+}
+
+.hero {
+    background-color: #5035be;
+    border: 5px solid black;
+    color: white;
+    height: auto;
+    margin: 5px 5px 10px 5px;
+    text-align: center;
+    width: auto;
+}
+
+.hero-name {
+    font-size: 40px;
+}
+
+.super-wrapper {
+    background-color: #ff9000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.heroe-button {
+    background-color: #FFE62E;
+    border: 2px solid black;
+    font-size: 30px;
+    height: auto;
+    margin: 6px 0 4px 0;
+    width: 200px;
+}
+
+.parrafo {
+    font-size: 20px;
+    grid-column: 1/1;
+    grid-row: 2/2;
+    height: 100%;
+}
+
+.superhero-image {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    height: 280px;
+    width: 100%;
+}
+
+.super-header {
+    background-color: white;
+    position: sticky;
+    text-align: center;
+    top: 00.1px;
+}
+
+.super-footer {
+    background-color: white;
+    bottom: 0;
+    font-size: 30px;
+    margin: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+/* version tablet*/
+
+@media screen and (min-width: 768px) {
+    .content {
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 100%;
+        height: auto;
+        margin-bottom: 3px;
+    }
+    .hero {
+        margin: 15px 15px 15px 15px;
+    }
+    .parrafo {
+        font-size: 30px;
+        grid-column: 2/2;
+        grid-row: 1/1;
+        height: 100%;
+        margin-right: 10px;
+        text-align: justify;
+    }
+    .superhero-image {
+        grid-column: 1/1;
+        grid-row: 1/1;
+        height: 280px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .content {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        height: auto;
+        margin-bottom: 3px;
+    }
+    .hero {
+        background-color: #006E73;
+        border: 5px solid black;
+        color: white;
+        height: auto;
+        margin: 5px 5px 10px 5px;
+        text-align: center;
+        width: 48%;
+    }
+}
